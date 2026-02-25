@@ -1,3 +1,3 @@
-a=10
-b=5
-c=a+b
+class Solution:
+    def sum(self, num1: int, num2: int) -> int:
+        return num1+num2
