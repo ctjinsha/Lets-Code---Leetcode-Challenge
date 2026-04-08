@@ -1,0 +1,14 @@
+class Solution:
+    def countEven(self, num: int) -> int:
+        
+        count=0
+        for i in range(1,num+1):
+            temp=i
+            suum=0
+            while temp>0:
+                digit=temp%10
+                suum+=digit
+                temp//=10
+            if suum%2==0:
+                count+=1
+        return count
