@@ -1,0 +1,17 @@
+class Solution:
+    def areaOfMaxDiagonal(self, dimensions: List[List[int]]) -> int:
+        maxdia=0
+        maxarea=0
+        for i,j in dimensions:
+            dia=i**2+j**2
+            area=i*j
+            if dia>maxdia:
+                maxdia=dia
+                maxarea=area
+            elif dia==maxdia:
+                maxarea=max(maxarea,area)
+        return maxarea
+
+            
+
+        
