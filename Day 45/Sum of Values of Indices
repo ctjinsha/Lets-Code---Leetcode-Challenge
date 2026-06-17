@@ -1,0 +1,10 @@
+class Solution:
+    def sumIndicesWithKSetBits(self, nums: List[int], k: int) -> int:
+        
+        summ=0
+        for i in range(len(nums)):
+            bino=bin(i)[2:]
+            if bino.count("1")==k:
+                summ+=nums[i]
+        return summ
+
